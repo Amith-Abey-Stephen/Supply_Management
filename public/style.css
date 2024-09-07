@@ -65,25 +65,32 @@ header h1 {
 }
 
 .dashboard {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+  gap: 10px; /* Gap between cards */
   margin-top: 20px;
+  margin-left: 150px;
+
 }
 
 .card {
   background-color: #fff;
   border-radius: 8px;
-  padding: 20px;
-  width: 150px;
+  padding: 5em;
+  width: 50%; /* Make the card take full width of the grid column */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
-  margin-bottom: 10px;
+  text-align: center;
 }
-
+.card p{
+  text-align: center;
+  margin-top: 1em;
+}
 .tables {
-  margin-top: 40px;
+  margin-top: 10em;
+  margin-left: 5em;
 }
 
 table {
