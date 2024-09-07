@@ -3,12 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supply Management System</title>
+    <title>Admin Dashboard - Supply Chain Management</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello from Node.js!</h1>
-    <button id="btn">Click me</button>
-    <script src="script.js"></script>
-  </body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#Supply">Supply</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Relief Center</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>ReliefNet Dashboard</h1>
+                <p>Welcome, Admin!</p>
+            </header>
+
+            
+            <section class="tables" id="Supply">
+                <h2>Supply Items</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item No</th>
+                            <th>Item Name</th>
+                            <th>Quantity</th>
+                            <th>Expiry</th>
+                            <th>Location</th>
+                            <th>Volunteer ID</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Clothing</td>
+                            <td>In Stock</td>
+                            <td>-</td>
+                            <td>Kottayam</td>
+                            <td>V0037</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Food</td>
+                          <td>In Stock</td>
+                          <td>2 days</td>
+                          <td>Kollam</td>
+                          <td>V0037</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Medicine</td>
+                          <td>In Stock</td>
+                          <td>2 weeks</td>
+                          <td>Idukki</td>
+                          <td>V0037</td>
+                        </tr>
+                    </tbody>
+                </table>            
+            </section>
+
+
+            
+        </div>
+    </div>
+</body>
 </html>
