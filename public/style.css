@@ -89,12 +89,12 @@ header h1 {
   margin-top: 1em;
 }
 .tables {
-  margin-top: 10em;
+  margin-top: 5em;
   margin-left: 5em;
 }
 
 table {
-  width: 100%;
+  width: 200%;
   border-collapse: collapse;
   margin-top: 20px;
 }
